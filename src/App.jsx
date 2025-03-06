@@ -1,16 +1,17 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
-import './App.css';
-import Usercard from './components/usercard.jsx';
+// src/App.jsx
+import React from "react";
+import "./App.css";
+import Usercard from "./components/usercard.jsx";
 
 function App() {
-  const cards = Array.from({ length: 10 });
+  const cards = Array.from({ length: 10 }); // Creating 10 user cards
+
   const gridStyle = {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(4, 1fr)',
-    gap: '16px',
-    padding: '16px',
+    display: "grid",
+    gridTemplateColumns: "repeat(4, 1fr)", // 4 columns layout
+    gap: "20px",
+    padding: "20px",
+    justifyContent: "center",
   };
 
   return (
